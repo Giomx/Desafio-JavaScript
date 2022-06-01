@@ -1,3 +1,5 @@
+//Identifar si un umero es par o impar.
+
 let  numero = parseInt(prompt('Ingresa un numero: '));
 
 for(i = 0; i <= 0; ++i){
