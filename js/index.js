@@ -1,5 +1,5 @@
 //Identifar si un umero es par o impar.
-
+/* 
 let  numero = parseInt(prompt('Ingresa un numero: '));
 
 for(i = 0; i <= 0; ++i){
@@ -10,4 +10,13 @@ for(i = 0; i <= 0; ++i){
     } else{
         alert('!El caracter que ingresaste no es un numero!')
     }
+} */
+
+//Calcular costo total de productos 
+function total(precio, noProductos) {
+    return precio * noProductos;
+}
+for (i = 0; i <=0; i++) {
+    let resultado = total(+(prompt("Ingresa el precio del producto: ")), +(prompt("Ingresa el número de productos comprados: ")));
+    alert(`El Costo total es: ${resultado}`);
 }
