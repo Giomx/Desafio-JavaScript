@@ -1,22 +1,31 @@
-//Identifar si un umero es par o impar.
-/* 
-let  numero = parseInt(prompt('Ingresa un numero: '));
+const productos = [{
+    id:1,
+    nombre: 'Mezcal de damiana',
+    tamaño: "500 ml",
+    precio: 80,
+},{
+    id:2,
+    nombre: 'Mezcal jamaica',
+    tamaño: "500 ml",
+    precio: 100,
 
-for(i = 0; i <= 0; ++i){
-    if (numero %2 == 0 ){
-        alert(`El numero ${numero} es par: `)
-    }else if(numero %2 == 1){
-        alert(`El numero ${numero} impar:`)
-    } else{
-        alert('!El caracter que ingresaste no es un numero!')
-    }
-} */
+},{
+    id:3,
+    nombre: 'Mezcal de cafe',
+    tamaño: "500 ml",
+    precio: 120,
+},{
+    id:4,
+    nombre: 'Mezcal de guayaba',
+    tamaño: "500 ml",
+    precio: 100,
+},{
+    id:5,
+    nombre: 'Mezcal maracuya',
+    tamaño: "500 ml",
+    precio: 100,
+}]
 
-//Calcular costo total de productos 
-function total(precio, noProductos) {
-    return precio * noProductos;
-}
-for (i = 0; i <=0; i++) {
-    let resultado = total(+(prompt("Ingresa el precio del producto: ")), +(prompt("Ingresa el número de productos comprados: ")));
-    alert(`El Costo total es: ${resultado}`);
-}
+productos.find(producto => {
+    console.log(producto.nombre);
+});
