@@ -1,31 +1,31 @@
-const productos = [{
-    id:1,
-    nombre: 'Mezcal de damiana',
-    tamaño: "500 ml",
-    precio: 80,
-},{
-    id:2,
-    nombre: 'Mezcal jamaica',
-    tamaño: "500 ml",
-    precio: 100,
+alert("******BIENVENIDO A LA TIENDA VIRTUAL******");
+alert("Presiona enter para ingresar");
 
-},{
-    id:3,
-    nombre: 'Mezcal de cafe',
-    tamaño: "500 ml",
-    precio: 120,
-},{
-    id:4,
-    nombre: 'Mezcal de guayaba',
-    tamaño: "500 ml",
-    precio: 100,
-},{
-    id:5,
-    nombre: 'Mezcal maracuya',
-    tamaño: "500 ml",
-    precio: 100,
-}]
+class producto {
+    constructor (id, nombre, tamaño, precio, disponible){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.disponible = true;
 
-productos.find(producto => {
-    console.log(producto.nombre);
-});
+    }
+    sumarProducto(){
+        return this.precio + this.precio;
+    }
+    productoStock(){
+        this.disponible = false;
+    }
+}
+
+const carrito = []
+let resultado = prompt('Ingrese el nombre del producto: ');
+    if (resultado === 'total' || resultado === 'Total'|| resultado === 'TOTAL'){
+    }else{
+        nombrePro = resultado;
+        idPro = +(prompt('Ingrese el id del producto: '))
+        precioPro = +(prompt('Ingrese el precio del producto: '))
+        carrito.push(new producto(nombrePro, idPro, precioPro));
+    }
+
+
+console.log(carrito);
